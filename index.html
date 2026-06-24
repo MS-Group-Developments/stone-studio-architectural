@@ -41,7 +41,7 @@
     nav.sc .nav-back:hover{border-color:var(--fg);color:var(--fg);background:transparent}
     @media(max-width:520px){.nav-back{display:none}}
     .nav-links{display:flex;gap:32px;list-style:none;position:absolute;left:50%;transform:translateX(-50%)}
-    .nav-links a{font-size:0.78rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;transition:color 0.2s}
+    .nav-links a{font-size:0.78rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;transition:color 0.2s}
     nav:not(.sc) .nav-links a{color:rgba(255,255,255,0.75)}
     nav:not(.sc) .nav-links a:hover{color:#fff}
     nav.sc .nav-links a{color:var(--mid)}
@@ -73,7 +73,7 @@
     .hero-content{padding:0 64px;max-width:780px;text-align:center}
     @media(max-width:768px){.hero-content{padding:0 24px}}
     .hero-content .label{color:rgba(255,255,255,0.65)}
-    .hero-content p{color:rgba(255,255,255,0.72);font-size:1.05rem;margin-top:18px;max-width:480px;margin-left:auto;margin-right:auto}
+    .hero-content p{color:rgba(255,255,255,0.88);font-size:1.05rem;font-weight:500;margin-top:18px;max-width:480px;margin-left:auto;margin-right:auto}
 
     /* ── PHOTO STRIP ── */
     .photo-strip{display:grid;gap:3px;background:var(--bg-s)}
@@ -94,7 +94,7 @@
     @media(max-width:900px){.svc-grid{grid-template-columns:1fr 1fr}}
     @media(max-width:580px){.svc-grid{grid-template-columns:1fr}}
     .svc{background:var(--bg-s);overflow:hidden}
-    .svc img{width:100%;height:auto;display:block}
+    .svc img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
     .svc-body{padding:24px 28px 28px}
     .svc h3{margin-bottom:8px}
     .svc p{font-size:0.82rem;line-height:1.72}
@@ -194,13 +194,6 @@
     </div>
   </div>
 
-  <div class="photo-strip" style="grid-template-columns:repeat(4,1fr)">
-    <img src="3.jpg" alt="Architectural stone feature detail" width="800" height="800" loading="lazy" decoding="async">
-    <img src="4.jpg" alt="Sculptural stone commission in situ" width="800" height="800" loading="lazy" decoding="async">
-    <img src="12.jpg" alt="Natural stone entrance feature" width="800" height="800" loading="lazy" decoding="async">
-    <img src="19.jpg" alt="Stone Studio architectural stonework" width="800" height="800" loading="lazy" decoding="async">
-  </div>
-
   <section class="bt" id="work">
     <div class="c">
       <div class="two-col">
@@ -215,6 +208,13 @@
       </div>
     </div>
   </section>
+
+  <div class="photo-strip" style="grid-template-columns:repeat(4,1fr)">
+    <img src="3.jpg" alt="Architectural stone feature detail" width="800" height="800" loading="lazy" decoding="async">
+    <img src="4.jpg" alt="Sculptural stone commission in situ" width="800" height="800" loading="lazy" decoding="async">
+    <img src="12.jpg" alt="Natural stone entrance feature" width="800" height="800" loading="lazy" decoding="async">
+    <img src="19.jpg" alt="Stone Studio architectural stonework" width="800" height="800" loading="lazy" decoding="async">
+  </div>
 
   <section class="bg-s bt" id="services">
     <div class="c">
